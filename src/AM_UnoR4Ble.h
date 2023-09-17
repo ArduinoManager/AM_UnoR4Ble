@@ -32,7 +32,7 @@
 #define SD_SUPPORT                // uncomment to enable support for SD Widget  - LEFT THIS ALONE AT THE MOMENT
 #define SDLOGGEDATAGRAPH_SUPPORT  // uncomment to enable support for Logged Data Widget - LEFT THIS ALONE AT THE MOMENT
 #define DEBUG                     // uncomment to enable debugging - You should not need it !
-#define DEBUG_ALARMS              // uncomment to enable alarms debugging (DEBUG has to be uncommented as well)
+// #define DEBUG_ALARMS              // uncomment to enable alarms debugging (DEBUG has to be uncommented as well)
 
 
 #if !defined(ARDUINO_UNOR4_WIFI)
