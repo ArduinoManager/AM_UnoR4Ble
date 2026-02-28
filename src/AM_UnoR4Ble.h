@@ -31,7 +31,7 @@
 #define ALARMS_SUPPORT            // uncomment to enable support for Alarm Widget - LEFT THIS ALONE AT THE MOMENT
 #define SD_SUPPORT                // uncomment to enable support for SD Widget  - LEFT THIS ALONE AT THE MOMENT
 #define SDLOGGEDATAGRAPH_SUPPORT  // uncomment to enable support for Logged Data Widget - LEFT THIS ALONE AT THE MOMENT
-#define DEBUG                     // uncomment to enable debugging - You should not need it !
+// #define DEBUG                     // uncomment to enable debugging - You should not need it !
 // #define DEBUG_ALARMS              // uncomment to enable alarms debugging (DEBUG has to be uncommented as well)
 
 
@@ -230,6 +230,7 @@ public:
   void logLn(unsigned long msg);
 
   void temporaryDigitalWrite(uint8_t pin, uint8_t value, unsigned long ms);
+  float to_voltage(float adc_value, float vref, uint8_t resolution = 10);
 
 #if defined(ALARMS_SUPPORT) || defined(SDLOGGEDATAGRAPH_SUPPORT)
   unsigned long now();
